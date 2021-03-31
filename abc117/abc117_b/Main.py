@@ -1,0 +1,5 @@
+N = int(input())
+L = list(map(int,input().split()))
+L_max = max(L.copy())
+L.remove(max(L))
+print("Yes")  if L_max<sum(L) else print("No")

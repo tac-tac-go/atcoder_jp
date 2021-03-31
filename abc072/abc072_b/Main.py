@@ -1,0 +1,1 @@
+print("".join([s  for i,s in enumerate(input()) if i%2==0]))
