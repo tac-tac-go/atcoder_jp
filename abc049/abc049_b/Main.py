@@ -1,2 +1,5 @@
-c = input()
-print("vowel" if c in ["a","i","u",'e','o'] else "consonant")
+h,w = map(int,input().split())
+c = [input() for i in range(h)]
+for i in range(h):
+  print(c[i])
+  print(c[i])
