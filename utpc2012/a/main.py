@@ -1,0 +1,6 @@
+s = input().split("/")
+y = list(s[0])
+md = list(s[1]+s[2])
+y.sort()
+md.sort()
+print("yes") if y==md else print("no")
