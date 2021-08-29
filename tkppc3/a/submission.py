@@ -1,0 +1,5 @@
+c1, a = input().split()
+c2, b = input().split()
+a = int(a)
+b = int(b)
+print((abs(a-b))//15) if c1 == c2 else print((a+b)//15)
