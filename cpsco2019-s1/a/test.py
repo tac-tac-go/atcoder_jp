@@ -34,4 +34,7 @@ if __name__ == "__main__":
 
 def resolve():
   n,a = map(int,input().split())
+  team = n//3
+  import math
+  print(math.ceil(a/3),team if a>=team else a)
   
