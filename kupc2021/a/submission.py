@@ -1,0 +1,5 @@
+n = int(input())
+s = list(map(int, input().split()))
+t = int(input())
+result = set(map(lambda x: x//t, s))
+print(len(result))
