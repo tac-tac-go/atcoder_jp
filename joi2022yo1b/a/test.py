@@ -14,23 +14,18 @@ class TestClass(unittest.TestCase):
         self.assertEqual(out, output)
 
     def test_入力例_1(self):
-        input = """1F 5F"""
-        output = """4"""
+        input = """4"""
+        output = """64"""
         self.assertIO(input, output)
 
     def test_入力例_2(self):
-        input = """B1 B7"""
-        output = """6"""
-        self.assertIO(input, output)
-
-    def test_入力例_3(self):
-        input = """1F B1"""
+        input = """1"""
         output = """1"""
         self.assertIO(input, output)
 
-    def test_入力例_4(self):
-        input = """B9 9F"""
-        output = """17"""
+    def test_入力例_3(self):
+        input = """999"""
+        output = """997002999"""
         self.assertIO(input, output)
 
 
@@ -38,6 +33,5 @@ if __name__ == "__main__":
     unittest.main()
 
 def resolve():
-  st_list = "B9,B8,B7,B6,B5,B4,B3,B2,B1,1F,2F,3F,4F,5F,6F,7F,8F,9F".split(",")
-  s,t = input().split()
-  print(abs(st_list.index(s)-st_list.index(t)))
+  x = int(input())
+  print(x**3)

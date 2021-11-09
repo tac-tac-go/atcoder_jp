@@ -14,23 +14,18 @@ class TestClass(unittest.TestCase):
         self.assertEqual(out, output)
 
     def test_入力例_1(self):
-        input = """678"""
-        output = """1356"""
+        input = """aba"""
+        output = """3"""
         self.assertIO(input, output)
 
     def test_入力例_2(self):
-        input = """abc"""
-        output = """error"""
+        input = """ccc"""
+        output = """1"""
         self.assertIO(input, output)
 
     def test_入力例_3(self):
-        input = """0x8"""
-        output = """error"""
-        self.assertIO(input, output)
-
-    def test_入力例_4(self):
-        input = """012"""
-        output = """24"""
+        input = """xyz"""
+        output = """6"""
         self.assertIO(input, output)
 
 
@@ -38,5 +33,6 @@ if __name__ == "__main__":
     unittest.main()
 
 def resolve():
-  s = input()
-  print(int(s)*2) if s.isdigit()  else print("error")
+  s = list(input())
+  from itertools import permutations
+  print(len(set(permutations(s))))
