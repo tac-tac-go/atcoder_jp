@@ -1,0 +1,5 @@
+n = int(input())
+s = input()
+s1 = "".join(["M" if i%2==0 else "F" for i in range(n)])
+s2 = "".join(["F" if i%2==0 else "M" for i in range(n)])
+print("Yes") if s==s1 or s==s2 else print("No")
