@@ -1,5 +1,5 @@
-# atcoder_jp
+# atcoder
 
 
-### AtCoderで提出したコードをまとめています
-使用言語は主にpythonです
+### Files submitted by atcoder.
+##### Mainly Language : Python
