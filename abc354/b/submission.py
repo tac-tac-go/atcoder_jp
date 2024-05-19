@@ -1,0 +1,5 @@
+n = int(input())
+arr = dict([input().split() for i in range(n)])
+arr_sort = sorted(arr.items(),key=lambda x:x[0])
+arr_sum = sum([int(j) for i,j in arr_sort])
+print(arr_sort[arr_sum%n][0])
