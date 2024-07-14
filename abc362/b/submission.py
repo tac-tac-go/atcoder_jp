@@ -1,0 +1,8 @@
+xa,ya = map(int,input().split())
+xb,yb = map(int,input().split())
+xc,yc = map(int,input().split())
+distance1 = (abs(xa-xb)**2+abs(ya-yb)**2)
+distance2 = (abs(xa-xc)**2+abs(ya-yc)**2)
+distance3 = (abs(xb-xc)**2+abs(yb-yc)**2)
+distance = sorted([distance1,distance2,distance3])
+print("Yes") if distance[0]+distance[1]==distance[2] else print("No")
